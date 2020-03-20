@@ -10,8 +10,12 @@ public class Main_2523 {
 		
 		int N = sc.nextInt();
 		
-		for(int i = 0; i < N; i++) {
-			System.out.println("*");
-		}	
+		for( int j = 1; j<=2*N-1; j++) {
+			for(int i = 1; i<=(j<N?j:2*N-j); i++) {
+				System.out.print("*");
+		
+			}
+			System.out.println();
+		}
 	}
 }
